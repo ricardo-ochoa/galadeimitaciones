@@ -42,11 +42,11 @@ const IndexRoute: React.FC<Props> = ({participantes}) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Grid item  mb={5} display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
+          <Grid item  xs={12} lg={12} mb={5} display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
                 <img
                  
                   src={participante.img} 
-                  style={{ width:'200px', borderRadius:'100%'}}
+                  style={{ maxWidth:'150px', borderRadius:'1000px'}}
                 />
               <Typography textAlign='center'>{ participante.id }. { participante.name }</Typography>
               <Typography textAlign='center' variant='subtitle2' color="orange">{ participante.round }</Typography>
