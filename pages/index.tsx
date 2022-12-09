@@ -13,7 +13,7 @@ const IndexRoute: React.FC<Props> = ({participantes}) => {
 
   return <div className={styles.container}>
     <Head>
-      <title>Create Next App</title>
+      <title>✨Imitaciones 2022✨</title>
       <meta name="description" content="SHOW DE TALENTO 2022" />
       <link rel="icon" href="/favicon.ico" />
       <meta name="og:image" content={ 'https://res.cloudinary.com/dnxxkvpiz/image/upload/v1670566225/samples/people/RS19662_GettyImages-994124858-352733209_jntf8n.jpg' }/>
@@ -37,13 +37,14 @@ const IndexRoute: React.FC<Props> = ({participantes}) => {
       <Grid container gap={ 3 } display='flex' alignItems='center' justifyContent='center'>
           {participantes.map((participante) => (
         <a
+          key={participante.id}
           href={ participante.url }
           target="_blank"
           rel="noopener noreferrer"
         >
           <Grid item  mb={5} display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
                 <img
-                  key={participante.id}
+                 
                   src={participante.img} 
                   style={{ width:'200px', borderRadius:'100%'}}
                 />
