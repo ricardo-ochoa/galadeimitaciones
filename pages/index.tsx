@@ -17,7 +17,7 @@ const IndexRoute: React.FC<Props> = ({participantes}) => {
       <meta name="description" content="SHOW DE TALENTO 2022" />
       <link rel="icon" href="/favicon.ico" />
       <meta name="og:image" content={ 'https://res.cloudinary.com/dnxxkvpiz/image/upload/v1670566225/samples/people/RS19662_GettyImages-994124858-352733209_jntf8n.jpg' }/>
-      <meta name="Ochoa's Show" content="✨ SHOW DE TALENTO 2022 ✨"/>
+      <meta name="Ochoa's" content="✨ Gala de Imitaciones 2022 ✨"/>
     </Head>
 
     <main className={styles.main}>
@@ -27,10 +27,10 @@ const IndexRoute: React.FC<Props> = ({participantes}) => {
         🌟
       </Typography>
       <Typography variant='h2' className={styles.title} style={{ fontSize:'2rem'}}>
-        Bienvenid@ al 
+        Bienvenid@ a la 
       </Typography>
         <Typography variant='h1' style={{ fontSize:'3rem'}} className={styles.title} color="orange">
-          ✨ SHOW DE TALENTO 2022 ✨
+          ✨ Gala de Imitaciones 2022 ✨
         </Typography>
       </Box>
 
