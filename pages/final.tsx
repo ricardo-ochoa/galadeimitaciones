@@ -1,7 +1,7 @@
 import { Box, Grid, Typography } from '@mui/material';
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
-import api from '../api/api'
+import apiFinal from '../api/apiFinal'
 import styles from '../styles/Home.module.css'
 import {Product} from '../api/types';
 
@@ -74,7 +74,7 @@ const IndexRoute: React.FC<Props> = ({participantes}) => {
 
 export const getStaticProps: GetStaticProps = async () => { 
 
-  const participantes = await api.list();
+  const participantes = await apiFinal.list();
   console.log(participantes)
 
   return {
